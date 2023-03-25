@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+// import './tab3ToDoList'
 // import App from './App';
 import {
+  BrowserRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -12,6 +14,9 @@ import Tasks from './bages/tasks';
 import Blog from './bages/blog';
 import Contactus from './bages/contactus';
 import Homepage from './bages/Home page'
+import { HelmetProvider } from 'react-helmet-async';
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,9 +53,16 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <HelmetProvider>
+
   <React.StrictMode>
     <RouterProvider router={router} />
+    <BrowserRouter>
+    
+    </BrowserRouter>
   </React.StrictMode>
+  </HelmetProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

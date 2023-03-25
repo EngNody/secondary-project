@@ -1,6 +1,13 @@
-// body.style.backgroundColor="red"
 
-// iconstarfull.forEach((item) => {
+
+
+// const tab3ToDoList = () => {
+//   return (
+//     <>
+  // body.style.backgroundColor="red"
+
+// iconstarfull.forEach((item) =
+ {
 //   item.addEventListener("click", (eo) => {
 //     eo.target.classList.toggle("mycolor");
 //   });
@@ -26,7 +33,7 @@ const upload = document.querySelector(".icon-upload2");
 const mytasks = document.querySelector(".mytasks");
 const myinput=document.getElementById("myinput")
 
-upload.addEventListener("click", () => {
+upload.addEventListener("click", (eo) => {
   const mynewtask = `
     <div class="task">
         <span class="icon-star-full icon"></span>
@@ -110,3 +117,25 @@ mytasks.addEventListener("click", (eo) => {
       break;
   }
 });
+
+//     </>
+//   );
+}
+
+
+// export default tab3ToDoList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

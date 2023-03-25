@@ -1,11 +1,18 @@
 // import React from 'react';
 import Footer from "../comp/Footer";
 import Header from '../comp/header';
+import { Helmet } from 'react-helmet-async';
 // import { NavLink,Link } from "react-router-dom";
+
 
 const Tasks = () => {
   return (
     <>
+<Helmet>
+        <title>Hello Tasks</title>
+        <meta name="description" content="React Full Course for beginners"/>  
+            </Helmet>
+
           <Header/>
 
     <div>
