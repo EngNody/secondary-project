@@ -26,7 +26,7 @@ const upload = document.querySelector(".icon-upload2");
 const mytasks = document.querySelector(".mytasks");
 const myinput=document.getElementById("myinput")
 
-upload.addEventListener("click", () => {
+upload.addEventListener("click", ()=> {
   const mynewtask = `
     <div class="task">
         <span class="icon-star-full icon"></span>

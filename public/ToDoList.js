@@ -22,12 +22,12 @@
 //   });
 // });
 //
-const upload = document.querySelector(".icon-upload2");
-const mytasks = document.querySelector(".mytasks");
+const upload=document.querySelector(".icon-upload2");
+const mytasks=document.querySelector(".mytasks");
 const myinput=document.getElementById("myinput")
 
 upload.addEventListener("click", () => {
-  const mynewtask = `
+  const mynewtask =`
     <div class="task">
         <span class="icon-star-full icon"></span>
         <p lang="ar"  class="ptext"> ${myinput.value} </p>  
